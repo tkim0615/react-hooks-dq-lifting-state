@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 
-function DarkModeWrapper(props) {
+function DarkModeWrapper(props) {  
+
+                                                  //pass down as prop onHandleToggle fx and darkMode state to Header
   return (
     <div id="wrapper" className={props.darkMode ? "dark-mode" : ""}>
       {props.children}
