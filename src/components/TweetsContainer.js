@@ -5,8 +5,11 @@ import { users as userData } from "../data/data";
 
 function TweetsContainer() {
   const [users, setUsers] = useState(userData);
-
+  const [selectedId, setSelectedId] = useState(users[0].id)
   console.log("In TweetsContainer, state is", users);
+  const handleChangeUser =(user)=>{
+    setSelectedId(user.id)
+  }
   return (
     <div className="ui main container">
       <div className="ui grid">
@@ -16,7 +19,7 @@ function TweetsContainer() {
         </div>
         <div className="ten wide column">
           <h2 className="ui header">Tweets</h2>
-          <TweetList user={users[0]} />
+          <TweetList user={selectedUser} />
         </div>
       </div>
     </div>

@@ -3,7 +3,6 @@ import Menu from "./Menu";
 
 function Header({onHandleToggle, darkMode}) {
 
-
   return (
     <div className={`ui fixed menu ${darkMode ? "inverted" : ""}`}>
       <div className="menu item">Fwitter</div>
