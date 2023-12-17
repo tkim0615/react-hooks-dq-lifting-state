@@ -13,7 +13,8 @@ function UserCard(props) {
         <div className="description">{props.description}</div>
       </div>
       <div
-        onClick={() => props.handleUserClick(props.id)}
+        onClick={() => props.handleUserClicks((props.id))}
+      
         className="ui bottom attached button"
       >
         <i className="add icon"></i>
